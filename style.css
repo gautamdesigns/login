@@ -104,6 +104,11 @@ body {
 	padding: 0 2rem;
 	height: 100%;
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
 .container input {
 	background-color: #eee;
 	border: var(--border);
