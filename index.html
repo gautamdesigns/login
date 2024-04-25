@@ -3,39 +3,44 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Login</title>
 	</head>
-
 	<body>
 		<div class="container" id="container">
 			<div class="form-container register">
-				<form>
+				<form id="register-form">
 					<h1>Create My Account</h1>
-					<input type="text" placeholder="Name" />
-					<input type="email" placeholder="Email" />
-					<input type="number" placeholder="Phone Number" />
-					<input type="password" placeholder="Password" />
-					<input type="text" placeholder="Address" />
-					<button>Create My Account</button>
+					<input type="text" id="name" placeholder="Name" />
+					<input type="email" id="email" placeholder="Email" />
+					<input type="tel" id="phone" placeholder="Phone Number" />
+					<input
+						type="password"
+						id="password"
+						placeholder="Password" />
+					<input type="text" id="address" placeholder="Address" />
+					<button type="submit">Create My Account</button>
 				</form>
 			</div>
 			<div class="form-container sign-in">
-				<form>
+				<form id="login-form">
 					<h1>Sign In</h1>
-					<input type="text" placeholder="Email / Phone" />
-					<input type="password" placeholder="Password" />
+					<input
+						type="text"
+						id="login-email-phone"
+						placeholder="Email / Phone" />
+					<input
+						type="password"
+						id="login-password"
+						placeholder="Password" />
 					<a href="#">Forget Your Password?</a>
-					<button>Sign In</button>
+					<button type="submit">Sign In</button>
 				</form>
 			</div>
 			<div class="toggle-container">
 				<div class="toggle">
 					<div class="toggle-panel toggle-left">
-						<h1>Welcome to Bharat Bazaar !</h1>
+						<h1>Welcome to Bharat Bazaar!</h1>
 						<p>
 							Register with your personal details to access all
 							the features of our website.
@@ -43,7 +48,6 @@
 						<p>Already have an account?</p>
 						<button class="hidden" id="login">Sign In</button>
 					</div>
-
 					<div class="toggle-panel toggle-right">
 						<h1>Welcome Back!</h1>
 						<p>
