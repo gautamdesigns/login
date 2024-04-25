@@ -63,7 +63,8 @@ body {
 	margin: 1rem 0;
 }
 .container a:hover {
-	color: var(--green);
+	color: var(--theme);
+	text-decoration: underline;
 }
 .container button {
 	margin-top: 1rem;
